@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="css/imagetocss.css" rel="stylesheet" type="text/css">
+	<script src="javascript/imagetocss.js"></script>
+	<title>imageChurner5000: Embed images in your CSS</title>
+</head>
+<body>
+	<form id="imgDrag" action="." method="get">
+		<div id="imgDragElement">
+			<label id="imgDragManualLabel" for="imgDragManual">
+				<span>+ Add file</span>
+				<input type="file" name="imgDragManual" id="imgDragManual" />
+			</label>
+		</div>
+		<ul id="imgConfigPanel">
+			<li>
+				<label for="background-color">
+					Background color:
+					<input id="background-color" name="background-color" value="transparent" />
+				</label>
+			</li>
+			<li>
+				<label for="background-repeat">
+					Repeat:
+					<select id="background-repeat" name="background-repeat">
+						<option value="no-repeat">No repeat</option>
+						<option value="repeat-x">X</option>
+						<option value="repeat-y">Y</option>
+						<option value="space">Space</option>
+						<option value="round">Round</option>
+						<option value="">N/A</option>
+					</select>
+				</label>
+			</li>
+			<li>
+				<label for="background-position">
+					Position X/Y:
+					<input id="background-position" name="background-position" value="0 0" />
+				</label>
+			</li>
+			<li>
+				<label for="background-size">
+					Width/height:
+					<input id="background-size" name="background-size" />
+				</label>
+			</li>
+			<li>
+				<label for="background-origin">
+					Origin box:
+					<select id="background-origin" name="background-origin">
+						<option value="">N/A</option>
+						<option value="inherit">Inherit</option>
+						<option value="border-box">Border</option>
+						<option value="padding-box">Padding</option>
+						<option value="content-box">Content</option>
+					</select>
+				</label>
+			</li>
+			<li>
+				<label for="background-clip">
+					Clip box:
+					<select id="background-clip" name="background-clip">
+						<option value="">N/A</option>
+						<option value="inherit">Inherit</option>
+						<option value="border-box">Border</option>
+						<option value="padding-box">Padding</option>
+						<option value="content-box">Content</option>
+						<option value="text">Text</option>
+					</select>
+				</label>
+			</li>
+			<li>
+				<label for="background-attachment">
+					Attachment:
+					<select id="background-attachment" name="background-attachment">
+						<option value="">N/A</option>
+						<option value="inherit">Inherit</option>
+						<option value="local">Local</option>
+						<option value="fixed">Fixed</option>
+						<option value="scroll">Scroll</option>
+					</select>
+				</label>
+			</li>
+			<li>
+				<label for="imgConfigPanelCompact">
+					Compact CSS
+					<input id="imgConfigPanelCompact" name="imgConfigPanelCompact" type="checkbox" checked>
+				</label>
+			</li>
+		</ul>
+		<div id="svcOutputHolder">
+			<textarea id="svcOutput" name="svcOutput" placeholder="CSS code will appear here."></textarea>
+		</div>
+		<figure id="svcOutputThumb"></figure>
+	</form>
+</body>
+</html>
